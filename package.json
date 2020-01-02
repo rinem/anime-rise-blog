@@ -1,0 +1,20 @@
+{
+  "name": "anime-rise",
+  "version": "1.0.0",
+  "description": "A blog about trending anime.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Roshan Mishra",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.3"
+  }
+}
