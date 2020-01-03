@@ -95,6 +95,17 @@ app.put("/:id", (req, res) => {
     });
 });
 
+//Delete Post route
+app.delete("/:id", (req, res) => {
+    Blog.findByIdAndRemove(req.params.id, function(err) {
+        if(err) {
+            res.redirect("/");
+        } else {
+            res.redirect("/");
+        }
+    });
+});
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, console.log(`Server started on port ${PORT}`));
 
